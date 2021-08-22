@@ -6,9 +6,20 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         outline: 0;
+        font-family: Arial;
+        text-decoration: none;
+        list-style: none;
     }
 
     body {
-        background-color: rgb(224, 224, 224);
+        background-color: rgb(245, 245, 245);
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        justify-content center;
+        align-items: center;
+        padding-top: 40px;
     }
 `;
