@@ -1,9 +1,15 @@
-import React from "react";
+import { FC } from 'react';
+import { Router } from 'react-router-dom';
 
-export default function App() {
-  return (
-    <section>
-      <h1>Todos</h1>
-    </section>
-  );
-}
+import Routes from './routes';
+import history from './services/history';
+import GlobalStyle from './styles/global';
+
+const App: FC = () => (
+  <Router history={history}>
+    <Routes />
+    <GlobalStyle />
+  </Router>
+);
+
+export default App;
